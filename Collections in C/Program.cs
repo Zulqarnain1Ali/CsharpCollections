@@ -109,7 +109,7 @@ namespace Collections_in_C
             //food.Clear();
 
             //Convert into array
-            //String[] foodArray = food.ToArray();
+            //String[] foodArray = food.ToArray(); 
 
             foreach (string item in food)
             {
