@@ -104,11 +104,11 @@ namespace Collections_in_C
             //Console.WriteLine(food.Contains("Piza"));
             //Console.WriteLine(food.IndexOf("burger"));
             //Console.WriteLine(food.LastIndexOf("fries"));
-            //food.Sort();
+            //food.Sort(); 
             //food.Reverse();
             //food.Clear();
 
-            //Convert into array
+            //Convert into array 
             //String[] foodArray = food.ToArray(); 
 
             foreach (string item in food)
