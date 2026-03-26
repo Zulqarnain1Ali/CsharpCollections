@@ -125,12 +125,12 @@ namespace Collections_in_C
 
             //Dictionary
 
-            Dictionary<int, string> rookieOfTheYear = new();
+            //Dictionary<int, string> rookieOfTheYear = new();
 
-            rookieOfTheYear.Add(2000, "Mike");
-            rookieOfTheYear.Add(2001, "Josh");
-            rookieOfTheYear.Add(2002, "John");
-            rookieOfTheYear.Add(2003, "mosh");
+            //rookieOfTheYear.Add(2000, "Mike");
+            //rookieOfTheYear.Add(2001, "Josh");
+            //rookieOfTheYear.Add(2002, "John");
+            //rookieOfTheYear.Add(2003, "mosh");
 
             //Console.WriteLine(rookieOfTheYear[2002]);
 
@@ -140,13 +140,41 @@ namespace Collections_in_C
             //}
 
 
-            Dictionary<string, List<string>> wishlist new();
+            //Dictionary<string, List<string>> wishlist = new Dictionary<string, List<string>>();
+
+            //wishlist.Add("Tim Corey", new List<string> { "Xbox", "Tesla", "Pizza" });
+            //wishlist.Add("Billy Bob", new List<string> { "PS5", "Ford", "Burger" });
+            //wishlist.Add("Marry James", new List<string> { "Iphone 17", "mustang" });
+
+            //foreach (var (key, value) in wishlist)
+            //{
+            //    Console.WriteLine(key + "'s wishlist is: ");
+            //    foreach (var item in value)
+            //    {
+            //        Console.WriteLine(item);
+            //    }
+            //}
+
+
+
+            // Use the long version here
+            Dictionary<string, List<string>> wishlist = new Dictionary<string, List<string>>();
 
             wishlist.Add("Tim Corey", new List<string> { "Xbox", "Tesla", "Pizza" });
             wishlist.Add("Billy Bob", new List<string> { "PS5", "Ford", "Burger" });
             wishlist.Add("Marry James", new List<string> { "Iphone 17", "mustang" });
 
-            foreach (var (key, value) in wishlist)
+            // Use 'entry' instead of (key, value)
+            foreach (var entry in wishlist)
+            {
+                Console.WriteLine(entry.Key + "'s wishlist is: ");
+                foreach (var item in entry.Value)
+                {
+                    Console.WriteLine("- " + item);
+                }
+            }
+
+
         }
     }
 }
