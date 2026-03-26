@@ -140,24 +140,8 @@ namespace Collections_in_C
             //}
 
 
-            //Dictionary<string, List<string>> wishlist = new Dictionary<string, List<string>>();
 
-            //wishlist.Add("Tim Corey", new List<string> { "Xbox", "Tesla", "Pizza" });
-            //wishlist.Add("Billy Bob", new List<string> { "PS5", "Ford", "Burger" });
-            //wishlist.Add("Marry James", new List<string> { "Iphone 17", "mustang" });
-
-            //foreach (var (key, value) in wishlist)
-            //{
-            //    Console.WriteLine(key + "'s wishlist is: ");
-            //    foreach (var item in value)
-            //    {
-            //        Console.WriteLine(item);
-            //    }
-            //}
-
-
-
-            // Use the long version here
+      
             Dictionary<string, List<string>> wishlist = new Dictionary<string, List<string>>();
 
             wishlist.Add("Tim Corey", new List<string> { "Xbox", "Tesla", "Pizza" });
@@ -170,10 +154,11 @@ namespace Collections_in_C
                 Console.WriteLine(entry.Key + "'s wishlist is: ");
                 foreach (var item in entry.Value)
                 {
-                    Console.WriteLine("- " + item);
+                    Console.WriteLine("   - " + item);
                 }
             }
 
+            Console.WriteLine(wishlist["Tim Corey"][0]);
 
         }
     }
