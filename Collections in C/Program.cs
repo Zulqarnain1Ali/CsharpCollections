@@ -90,16 +90,16 @@ namespace Collections_in_C
             //generic collections           strongly typed
             //list
 
-            List<string> food = new List<string>();
+            //List<string> food = new List<string>();
 
-            food.Add("Piza");
-            food.Add("burger");
-            food.Add("hotdog");
-            food.Add("fries");
+            //food.Add("Piza");
+            //food.Add("burger");
+            //food.Add("hotdog");
+            //food.Add("fries");
 
             //food.Remove("fries");
 
-            Console.WriteLine(food.Count);
+            //Console.WriteLine(food.Count); 
 
             //Console.WriteLine(food.Contains("Piza"));
             //Console.WriteLine(food.IndexOf("burger"));
@@ -111,14 +111,28 @@ namespace Collections_in_C
             //Convert into array 
             //String[] foodArray = food.ToArray(); 
 
-            foreach (string item in food)
-            {
-                Console.WriteLine(item);
-            }
+            //foreach (string item in food)
+            //{
+            //    Console.WriteLine(item);
+            //}
             //Console.WriteLine(food[0]);
 
 
 
+
+
+
+
+            //Dictionary
+
+            Dictionary<int, string> rookieOfTheYear = new();
+
+            rookieOfTheYear.Add(2000, "Mike");
+            rookieOfTheYear.Add(2001, "Josh");
+            rookieOfTheYear.Add(2002, "John");
+            rookieOfTheYear.Add(2003, "mosh");
+
+            Console.WriteLine(rookieOfTheYear[2002]);
         }
     }
 }
