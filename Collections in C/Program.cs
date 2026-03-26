@@ -132,7 +132,21 @@ namespace Collections_in_C
             rookieOfTheYear.Add(2002, "John");
             rookieOfTheYear.Add(2003, "mosh");
 
-            Console.WriteLine(rookieOfTheYear[2002]);
+            //Console.WriteLine(rookieOfTheYear[2002]);
+
+            //if (rookieOfTheYear.ContainsKey(2003))
+            //{
+            //    Console.WriteLine(rookieOfTheYear[2003]);
+            //}
+
+
+            Dictionary<string, List<string>> wishlist new();
+
+            wishlist.Add("Tim Corey", new List<string> { "Xbox", "Tesla", "Pizza" });
+            wishlist.Add("Billy Bob", new List<string> { "PS5", "Ford", "Burger" });
+            wishlist.Add("Marry James", new List<string> { "Iphone 17", "mustang" });
+
+            foreach (var (key, value) in wishlist)
         }
     }
 }
