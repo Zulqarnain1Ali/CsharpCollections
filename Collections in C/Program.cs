@@ -141,24 +141,70 @@ namespace Collections_in_C
 
 
 
-      
-            Dictionary<string, List<string>> wishlist = new Dictionary<string, List<string>>();
 
-            wishlist.Add("Tim Corey", new List<string> { "Xbox", "Tesla", "Pizza" });
-            wishlist.Add("Billy Bob", new List<string> { "PS5", "Ford", "Burger" });
-            wishlist.Add("Marry James", new List<string> { "Iphone 17", "mustang" });
+            //Dictionary<string, List<string>> wishlist = new Dictionary<string, List<string>>();
 
-            // Use 'entry' instead of (key, value)
-            foreach (var entry in wishlist)
-            {
-                Console.WriteLine(entry.Key + "'s wishlist is: ");
-                foreach (var item in entry.Value)
-                {
-                    Console.WriteLine("   - " + item);
-                }
-            }
+            //wishlist.Add("Tim Corey", new List<string> { "Xbox", "Tesla", "Pizza" });
+            //wishlist.Add("Billy Bob", new List<string> { "PS5", "Ford", "Burger" });
+            //wishlist.Add("Marry James", new List<string> { "Iphone 17", "mustang" });
 
-            Console.WriteLine(wishlist["Tim Corey"][0]);
+            //// Use 'entry' instead of (key, value)
+            //foreach (var entry in wishlist)
+            //{
+            //    Console.WriteLine(entry.Key + "'s wishlist is: ");
+            //    foreach (var item in entry.Value)
+            //    {
+            //        Console.WriteLine("   - " + item);
+            //    }
+            //}
+
+            //Console.WriteLine(wishlist["Tim Corey"][0]);
+
+
+
+
+
+
+
+
+            //Hashsets
+            // faster, no duplicates(same hash for duplicate element), 
+
+            HashSet<string> hobbies = new HashSet<string>();
+            hobbies.Add("Football");
+            hobbies.Add("Golf");
+            hobbies.Add("Cricket");
+            hobbies.Add("Golf");
+            hobbies.Add("Reading");
+
+            //foreach (string hobby in hobbies)
+            //{
+            //    Console.WriteLine(hobby);
+            //}
+
+            //hobbies.Contains("Golf");
+
+
+            HashSet<string> hobbiesA = new HashSet<string>();
+            hobbiesA.Add("Writing");
+            hobbiesA.Add("Football");
+
+            HashSet<string> hobbiesB = new HashSet<string>();
+            hobbiesB.Add("Golf");
+            hobbiesB.Add("Football");
+
+            //hobbiesA.UnionWith(hobbiesB);
+
+            //var hobbiesU = hobbiesA.Union(hobbiesB).ToHashSet();
+
+            //Console.WriteLine("Union of Hobbies:");
+            //foreach (var item in hobbiesU)
+            //{
+            //    Console.WriteLine($" - {item}");
+            //}
+
+
+
 
         }
     }
