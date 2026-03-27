@@ -203,7 +203,7 @@ namespace Collections_in_C
             //    Console.WriteLine($" - {item}");
             //}
 
-
+            //similar for intersection and other things
 
 
         }
